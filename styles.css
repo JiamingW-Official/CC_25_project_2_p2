@@ -1,0 +1,28 @@
+/* Basic reset and full-viewport sizing */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+}
+
+/* The container is 200vh tall so that the top half shows the animation and the bottom half is the white cover */
+#container {
+  height: 200vh;
+}
+
+/* The white cover spans the bottom 100vh */
+#whiteCover {
+  height: 100vh;
+  background-color: white;
+}
+
+/* p5.js canvas is fixed in the background */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
